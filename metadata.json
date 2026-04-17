@@ -1,0 +1,6 @@
+{
+  "name": "Assistant Toxique",
+  "description": "Un assistant vocal brutal, toxique et insultant.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}

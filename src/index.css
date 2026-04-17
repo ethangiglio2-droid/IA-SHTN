@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;900&family=Bangers&family=Permanent+Marker&family=Schoolbell&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-comic: "Bangers", cursive;
+  --font-marker: "Permanent Marker", cursive;
+  --font-quirky: "Schoolbell", cursive;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .border-wobbly {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+  .pop-shadow {
+    box-shadow: 10px 10px 0px 0px rgba(255,0,0,0.3);
+  }
+  .pop-shadow-small {
+    box-shadow: 4px 4px 0px 0px rgba(255,0,0,0.5);
+  }
+  .texture-dots {
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1.2px, transparent 1.2px);
+    background-size: 15px 15px;
+  }
+  .scanline {
+    background: linear-gradient(to bottom, rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(to right, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.05));
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
+}
